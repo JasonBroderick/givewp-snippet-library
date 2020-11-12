@@ -55,7 +55,7 @@ function my_custom_give_populate_amount_name_email() {
 
 				var firstNamePassedVal = giveCustom.getQueryVariable( 'first' ) !== false ? decodeURI( giveCustom.getQueryVariable( 'first' ) ) : '';
 				var lastNamePassedVal = giveCustom.getQueryVariable( 'last' ) !== false ? decodeURI( giveCustom.getQueryVariable( 'last' ) ) : '';
-				var emailPassedVal = giveCustom.getQueryVariable( 'email' ) !== false ? decodeURI( giveCustom.getQueryVariable( 'email' ) ) : '';
+				var emailPassedVal = giveCustom.getQueryVariable( 'email' ) !== false ? decodeURIComponant( giveCustom.getQueryVariable( 'email' ) ) : '';
 
 				var firstNameInput = giveForm.find( '#give-first-name-wrap input.give-input' );
 				var lastNameInput = giveForm.find( '#give-last-name-wrap input.give-input' );
